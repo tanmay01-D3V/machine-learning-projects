@@ -24,7 +24,7 @@ print(f'\nTraining set: {X_train.shape[0]} rows')
 print(f'Testing set: {X_test.shape[0]} rows')
 
 print('\n---Feature Engineering: Polynomial Features---')
-degree = 2
+degree = 5
 print(f'Applying PolynomialFeatures with degree={degree}')
 poly = PolynomialFeatures(degree=degree)
 X_train_poly = poly.fit_transform(X_train)
